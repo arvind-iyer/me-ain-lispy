@@ -1,7 +1,9 @@
 #include <stdio.h>
+#include <stdlib.h>
 
-/*Declare a 2048 char buffer */
-static char input[2048];
+//Using editline to allow editting the buffer
+#include <editline/readline.h>
+#include <editline/history.h>
 
 int main(int argc, char** argv){
 	//Print Version and Exit information
@@ -10,14 +12,17 @@ int main(int argc, char** argv){
 	
 	//Infinite loop
 	while (1) {
-		//Output prompt
-		fputs("lispy> ", stdout);
-		
-		//Read a line of user input
-		fgets(input, 2048, stdin);
+		//Output prompt and get input 
+		char* input = readline("lispy> ");
+
+		//Add input to history
+		add_history(input);
 		
 		//Echo input as output
-		printf("No you're a %s", input);
+		printf("No you're a %s\n", input);
+		
+		//Free input
+		free(input);
 	}
 	
 	//End
