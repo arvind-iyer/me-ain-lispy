@@ -29,13 +29,13 @@ void add_history(char* unused) {}
 
 int main(int argc, char** argv) {
 	//Version and exit info
-	puts("Lispy Version 0.0.1.1");
+	puts("Krispy Version 0.0.1.1");
 	puts("Press Ctrl+c to Exit\n");
 	
 	//Infinite loop
 	while (1) {
 		//Will intelligently choose the available readline for the user's platform
-		char* input = readline("lispy> ");
+		char* input = readline("krispy> ");
 		add_history(input);
 		printf("No you're a %s\n", input);
 		free(input);
