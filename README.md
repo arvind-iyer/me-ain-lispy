@@ -6,7 +6,7 @@
 
 /j toxic is a lisp-ish functional programming language powered by otaku culture and built by yours truly. It intends to embody the spirit of this weird and fascinating culture by providing a creative outlet for all this talent. 
 
-Ah who am I kidding, it's just me following the tutorial over at [buildyourownlisp.com](http://buildyourownlisp.com)
+Made by following the tutorial over at [buildyourownlisp.com](http://buildyourownlisp.com)
 
 ## Instructions:
 Compile with <code>
